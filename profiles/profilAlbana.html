@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Saya</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #f8e8ef;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .profile-card {
+            width: 400px;
+            background: white;
+            padding: 35px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(181, 52, 168, 0.15);
+            border-top: 6px solid #b534a8;
+        }
+
+        /* Foto Profil */
+        .profile-photo {
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            border-radius: 50%;
+            display: block;
+            margin: 0 auto 20px;
+            border: 5px solid #b534a8;
+        }
+
+        .profile-title {
+            text-align: center;
+            color: #b534a8;
+            margin-bottom: 30px;
+            font-size: 28px;
+        }
+
+        .profile-item {
+            margin-bottom: 20px;
+        }
+
+        .profile-item h3 {
+            color: #b534a8;
+            font-size: 14px;
+            margin-bottom: 6px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .profile-item p {
+            color: #333;
+            font-size: 16px;
+            padding: 12px 15px;
+            background: #fdf2f6;
+            border-radius: 10px;
+        }
+
+        /* List Film */
+        .movie-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .movie-list li {
+            background: #fdf2f6;
+            padding: 13px 15px;
+            border-radius: 10px;
+            border-left: 4px solid #c242b5;
+            color: #333;
+            font-size: 15px;
+            transition: 0.2s;
+        }
+
+        .movie-list li:hover {
+            background: #f5d8f1;
+            transform: translateX(5px);
+        }
+
+        .movie-number {
+            color: #c242b5;
+            font-weight: bold;
+            margin-right: 8px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="profile-card">
+
+        <img src="../profiles/albana.jpg" alt="Foto Profil" class="profile-photo">
+
+        <h1 class="profile-title">Profil Kami</h1>
+
+        <div class="profile-item">
+            <h3>Nama</h3>
+            <p>Muhammad Albana Hafit</p>
+        </div>
+        
+
+        <div class="profile-item">
+            <h3>NIM</h3>
+            <p>2025081005</p>
+        </div>
+
+        <div class="profile-item">
+            <h3>Tempat, Tanggal Lahir</h3>
+            <p>Jakarta, 8 Mei 2006</p>
+        </div>
+
+        <div class="profile-item">
+            <h3>Film Favorit</h3>
+
+            <ol class="movie-list">
+                <li>
+                    <span class="movie-number">01</span>
+                    The Oddesey
+                </li>
+
+                <li>
+                    <span class="movie-number">02</span>
+                    Spider-Man: Into the Spider-Verse
+                </li>
+
+                <li>
+                    <span class="movie-number">03</span>
+                    Chainsaw Man – The Movie: Reze Arc
+                </li>
+            </ol>
+        </div>
+
+    </div>
+
+</body>
+</html>
